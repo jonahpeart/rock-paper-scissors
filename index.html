@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" async></script>
 </head>
 <body>
+    <div class="header">
+        <img class="svg" src = "/assets/rps.svg" alt="text that reads rock paper scissors"/>
+    </div>
+    <div class="content">
+
+            <div class="choose" id="rock">
+                <img class="svg" src = "/assets/rock.svg" alt="text that reads rock"/>
+            </div>
+            <div class="choose" id="paper">
+                <img class="svg" src = "/assets/paper.svg" alt="text that reads paper"/>
+            </div>
+            <div class="choose" id="scissors">
+                <img class="svg" src = "/assets/scissors.svg" alt="text that reads scissors"/>
+            </div>
+
+    </div>
+    <div class="content">
+        <div class="score human">
+            <p id="humanChoice">You chose: </p>
+            <p id="humanScore">Your score: </p>
+        </div>
+        <div class="score computer">
+            <p id="computerChoice">Computer chose: </p>
+            <p id="computerScore">Computer score: </p>
+        </div>
+    </div>
+
+    <div class="modal" id="simpleModal">
+        <div class="modal-content">
+            <p id="winner"> unknown </p>
+            <button id="playAgain">Play Again</button>
+        </div>
+    </div>
     
 </body>
 </html>
